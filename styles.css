@@ -1,59 +1,62 @@
 body {
-	background-color: #FAEBD7;
+	background-color: #F0F3BD;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-	font-family: "Courier-new", Courier, monospace;
+h1 {
+	font-family: 'Helvetica', serif;
+	font-size: 75pt;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-left: 50px;
 }
 
-a {
-	color: inherit; 
-} 
-
-#quicken-item {
-	background-color: #ffb2ae;
+h2 {
+	font-family: 'Helvetica', serif;
+	font-size: 50pt;
+	padding-left: 50px;
+	font-weight: bold;
 }
 
-#msu-item {
-	background-color: #ABBA92;
+h3, h4 {
+	font-family: 'Helvetica', serif;
+	color: #F0F3BD;
 }
 
-#reuters-item {
-	background-color: #ffcb82;
+h5, h6, p {
+	font-family: 'Helvetica', serif;
+	color: #f7e7ce;
 }
 
-#handshake-item {
-	background-color: #cfcfc4;
+.info {
+	height: 250px;
 }
 
-#sprint-item {
-	background-color: #b19cd9;
+.one {
+	background-color: #05668D;
 }
 
-#coupon-item {
-	background-color: #97C7C7;
+.two {
+	background-color: #028090;
 }
 
-#education-item {
-	background-color: #fdfd96;
+.three {
+	background-color: #00A896;
 }
 
-#skills-item {
-	background-color: #c7d3bf;
+.four {
+	background-color: #02C39A;
 }
 
-#linkedin-item {
-	background-color: #95d1e8;
+.five {
+	background-color: #5DA399;
 }
 
-#email-item {
-	background-color: #ff9292;
+.six {
+	background-color: #0F8DD9;
 }
 
-#github-item {
-	background-color: #EDC9AF;
-}
+a {color: inherit; }
 
-#quote {
-	padding-top: 30px;
+.header {
+	background-color: #F0F3BD;
 }
