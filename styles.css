@@ -1,34 +1,56 @@
 body {
-	background-color: #F0F3BD;
+ 	background-color: #FAEBD7;
+ }
+
+ h1, h2, h3, h4, h5, h6, p {
+ 	font-family: 'Helvetica', serif;
+ 	font-weight: bold;
+ }
+ 
+ .head-text {
+ 	font-size: 125px;
+ 	transform: rotate(2deg);
+ 	padding-top: 20px;
+ }
+
+ .student-text {
+ 	font-size: 100px;
+ 	transform: rotate(350deg);
+ 	position: fixed;
+ 	color: white;
+ 	-webkit-text-stroke-width: 1px;
+   	-webkit-text-stroke-color: black;
+ }
+
+ .m-logo {
+ }
+
+ .engineer-text {
+ 	font-size: 100px;
+ 	transform: rotate(1deg);
+ 	position: fixed;
+ 	color: red;
+ 	-webkit-text-stroke-width: 8px;
+   	-webkit-text-stroke-color: orange;
+ }
+
+  .designer-text {
+ 	font-size: 100px;
+ 	transform: rotate(-20deg);
+ 	position: fixed;
+ 	color: purple;
+ 	text-decoration: line-through;
+ 	letter-spacing: 2px;
+ 	padding-top: 35px;
+ }
+
+.culture {
+	background-color: grey;
 }
 
-h1 {
-	font-family: 'Helvetica', serif;
-	font-size: 75pt;
-	font-weight: bold;
-	padding-top: 20px;
-	padding-left: 50px;
-}
-
-h2 {
-	font-family: 'Helvetica', serif;
-	font-size: 50pt;
-	padding-left: 50px;
-	font-weight: bold;
-}
-
-h3, h4 {
-	font-family: 'Helvetica', serif;
-	color: #F0F3BD;
-}
-
-h5, h6, p {
-	font-family: 'Helvetica', serif;
-	color: #f7e7ce;
-}
-
-.info {
-	height: 250px;
+.culture-text {
+	color: white;
+	padding-top: 100px;
 }
 
 .one {
