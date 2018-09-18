@@ -39,15 +39,21 @@
 
 
 		<div class="mx-auto music">
-			<h5 class="text-center">#np</h5>
-			<h6 class="text-muted text-center">my top 20 spotify artists/songs of the month</h6>
+			<div class="offset-3 col-md-6">
 
-			<hr>
+				<h5 class="text-center">#np</h5>
+				<h6 class="text-muted text-center">feed of music, articles, and videos I'm currently consuming (built with Spotify and Pocket)</h6>
+
+				<hr>
+			</div>
 
 
-			<div class="row offset-1 col-md-10" id="np">
+			<div class="row offset-3 col-md-6" id="np">
+
 
 			</div>
+
+
 		</div>
 
 	</div>
@@ -57,14 +63,14 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-   <script type="text/javascript" language="javascript">
+    <script type="text/javascript" language="javascript">
    		$(document).ready(function(){
    			$.getJSON('https://pbajwa-np.herokuapp.com/results', function(data) {
    				var results = data
    				results.sort(function(a, b){return 0.5 - Math.random()});
    		
    				for (i in results) {
-   					$('#np').append('<div class="col-4"> <div class="thumbnail"> <img class="img-fluid" src=' + results[i].images[0].url + '><p class="text-center"><b>' + results[i].name + '</b></p></div></div>')
+   					$('#np').append('<div class="col-md-12 result"><div class="panel panel-default"><div class="panel-heading"><a href=' + results[i].url + '><p class="panel-title text-center"><b>' + results[i].title + '</b></p></a></div><div class="panel-body"><img class="img-fluid" src=' + results[i].image + '></div><div class="panel-footer text-center"><small class="text-muted">' + results[i].type + '</small></div></div></div>');
    				}
 
    			})
