@@ -49,8 +49,9 @@
 
 
 			<div class="row offset-3 col-md-6" id="np">
-
-
+				<div class="mx-auto" id="loading">
+                	<img src="assets/loading.gif"/>  
+           		</div>
 			</div>
 
 
@@ -64,7 +65,22 @@
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <script type="text/javascript" language="javascript">
+
+    	  var $loading = $('#loading').hide();
+
+		  $(document)
+		  	.ajaxStart(function () {
+		    	$loading.show();
+		  	})
+		  	.ajaxStop(function () {
+		    	$loading.hide();
+		  	});
+
+
    		$(document).ready(function(){
+
+
+
    			$.getJSON('https://pbajwa-np.herokuapp.com/results', function(data) {
    				var results = data
    				results.sort(function(a, b){return 0.5 - Math.random()});
@@ -75,6 +91,8 @@
 
    			})
    		});
+
+
 		
 	</script>
 
