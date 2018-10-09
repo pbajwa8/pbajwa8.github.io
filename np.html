@@ -96,7 +96,7 @@
    				results.sort(function(a, b){return 0.5 - Math.random()});
    		
    				for (i in results) {
-   					$('#np').append('<div class="col-md-12 result"><div class="panel panel-default"><div class="panel-heading"><a href=' + results[i].url + '><p class="panel-title text-center"><b>' + results[i].title + '</b></p></a></div><div class="panel-body"><img class="img-fluid" src=' + results[i].image + '></div><div class="panel-footer text-center"><small class="text-muted">' + results[i].type + '</small></div></div></div>');
+   					$('#np').append('<div class="col-md-12 result"><div class="panel panel-default"><div class="panel-heading"><a href=' + results[i].url + ' target="_blank"><p class="panel-title text-center"><b>' + results[i].title + '</b></p></a></div><div class="panel-body"><img class="img-fluid" src=' + results[i].image + '></div><div class="panel-footer text-center"><small class="text-muted">' + results[i].type + '</small></div></div></div>');
    				}
 
    			})
