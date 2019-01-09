@@ -20,6 +20,8 @@
 
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>#np</title>
 
 </head>
@@ -31,8 +33,8 @@
 			<h1>pb</h1>
 		</div>
 
-		<div class="navigation">
-			<nav class="navbar navbar-expand-sm">
+		<div class="col-md-12 navigation">
+			<nav class="navbar navbar-expand">
 			  <ul class="navbar-nav mx-auto">
 			    <li class="nav-item text-center">
 			      <a class="nav-link" href="index.html">about</a>
@@ -49,16 +51,20 @@
 
 
 		<div class="mx-auto music">
-			<div class="offset-3 col-md-6">
+			<div class="col-md-12">
 
 				<h5 class="text-center">#np</h5>
-				<h6 class="text-muted text-center">feed of music, articles, and videos I'm currently consuming (built with Spotify and Pocket)</h6>
+				<h6 class="text-muted text-center">feed of music, articles, and videos I'm currently<br> consuming (built with Spotify and Pocket)</h6>
 
+				
+				<div class="col-md-6 mx-auto">
 				<hr>
+				</div>
+				
 			</div>
 
 
-			<div class="row offset-3 col-md-6" id="np">
+			<div class="row offset-3 col-md-6 mx-auto" id="np">
 				<div class="mx-auto" id="loading">
                 	<img src="assets/loading.gif"/>  
            		</div>
@@ -96,7 +102,7 @@
    				results.sort(function(a, b){return 0.5 - Math.random()});
    		
    				for (i in results) {
-   					$('#np').append('<div class="col-md-12 result"><div class="panel panel-default"><div class="panel-heading"><a href=' + results[i].url + ' target="_blank"><p class="panel-title text-center"><b>' + results[i].title + '</b></p></a></div><div class="panel-body"><img class="img-fluid" src=' + results[i].image + '></div><div class="panel-footer text-center"><small class="text-muted">' + results[i].type + '</small></div></div></div>');
+   					$('#np').append('<div class="result mx-auto"><div class="panel panel-default"><div class="panel-heading"><a href=' + results[i].url + ' target="_blank"><p class="panel-title text-center"><b>' + results[i].title + '</b></p></a></div><div class="panel-body"><img class="img-fluid" src=' + results[i].image + '></div><div class="panel-footer text-center"><small class="text-muted">' + results[i].type + '</small></div></div></div>');
    				}
 
    			})
